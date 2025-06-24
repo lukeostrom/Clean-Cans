@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clean Cans | Trash Can Cleaning - South Bay, CA</title>
+  <style>
+    :root {
+      --primary-color: #537D5D;      /* Deep sage green */
+      --secondary-color: #73946B;    /* Muted olive green */
+      --accent-color: #9EBC8A;       /* Soft mint green */
+      --background-color: #D2D0A0;   /* Warm beige */
+      --text-color: #333333;         /* Dark gray */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      text-align: center;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      border-radius: 0 0 10px 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .section, .hero, .cta {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+
+    #why-choose-us h2 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    #why-choose-us ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #why-choose-us ul li {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    #why-choose-us ul li:hover {
+      background-color: var(--secondary-color);
+      cursor: default;
+    }
+
+    .cta {
+      background-color: var(--secondary-color);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h3 {
+      margin-top: 0;
+    }
+
+    .cta a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.8rem;
+      border-radius: 25px;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .cta a.button:hover {
+      background-color: white;
+      color: var(--secondary-color);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 2rem auto 3rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    form input, form textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1.5px solid var(--secondary-color);
+      border-radius: 6px;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.85rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 10px 10px 0 0;
+      max-width: 900px;
+      margin: 2rem auto 1rem auto;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      form {
+        margin: 2rem 1rem;
+      }
+
+      .section, .hero, .cta {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Clean Cans</h1>
+    <p>Trash Can Cleaning Service – South Bay, California</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why-choose-us">Why Choose Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Booking</a>
+  </nav>
+
+  <section class="hero" id="about">
+    <h2>We Make Sure Your Trash Cans Are Clean</h2>
+    <p>
+      Clean Cans offers professional, eco-friendly trash can cleaning in the South Bay area of California. Whether it’s monthly or one-time, we ensure your cans are spotless, deodorized, and bacteria-free.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We clean, sanitize, and deodorize your trash cans using high-pressure, eco-friendly methods.</p>
+    <ul>
+      <li>Only $20 per can</li>
+      <li>Flexible scheduling</li>
+      <li>Perfect for homeowners, HOAs, and businesses</li>
+    </ul>
+  </section>
+
+  <section class="section" id="why-choose-us">
+    <h2>Why Choose Clean Cans?</h2>
+    <ul>
+      <li>Eco-friendly and safe cleaning products</li>
+      <li>Experienced and reliable service professionals</li>
+      <li>Flexible appointment times to fit your schedule</li>
+      <li>Affordable flat rate pricing — no hidden fees</li>
+      <li>100% satisfaction guarantee</li>
+    </ul>
+  </section>
+
+  <section class="cta" id="contact">
+    <h3>Ready to Book?</h3>
+    <p>Call or email us to schedule your cleaning today!</p>
+    <p><strong>Phone:</strong> <a href="tel:4243830987" style="color:white;">424-383-0987</a></p>
+    <p><strong>Email:</strong> <a href="mailto:lukecostrom@icloud.com" style="color:white;">lukecostrom@icloud.com</a></p>
+    <a href="#booking" class="button">Book Online</a>
+  </section>
+
+  <section class="section" id="booking">
+    <h2>Book a Cleaning</h2>
+    <form action="https://formspree.io/f/moqggwnp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <input type="text" name="address" placeholder="Service Address" required />
+      <textarea name="message" placeholder="Any special instructions..." rows="4"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Clean Cans – South Bay, California. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
